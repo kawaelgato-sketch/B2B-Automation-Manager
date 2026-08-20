@@ -6,9 +6,8 @@
     <title>B2B Automation Manager</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
-        body, html { width: 100%; height: 100%; background: #000; overflow: hidden; font-family: sans-serif; }
+        body, html { width: 100%; height: 100%; background: #000; overflow: hidden; }
         
-        /* Écran de démarrage START */
         #start-screen {
             position: fixed;
             top: 0; left: 0; width: 100%; height: 100%;
@@ -24,23 +23,23 @@
             font-size: 3rem;
             font-weight: bold;
             letter-spacing: 5px;
-            text-transform: uppercase;
+            font-family: monospace;
             border: 2px solid #fff;
             padding: 20px 50px;
             background: transparent;
-            transition: 0.3s;
+            transition: 0.2s;
         }
         #start-screen:hover #start-btn {
             background: #fff;
             color: #000;
         }
 
-        /* Contenu multimédia caché au départ */
         #media-container {
             position: fixed;
             top: 0; left: 0; width: 100%; height: 100%;
             display: none;
             z-index: 10;
+            background: #000;
         }
         #media-container img {
             width: 100%;
@@ -51,42 +50,34 @@
 </head>
 <body>
 
-    <!-- Écran Start -->
-    <div id="start-screen" onclick="launchSystem()">
+    <div id="start-screen" onclick="startSystem()">
         <div id="start-btn">START</div>
     </div>
 
-    <!-- Contenu multimédia en arrière-plan -->
     <div id="media-container">
         <!-- GIF en boucle -->
-        <img src="https://media.giphy.com/media/rzZRvD4cKRwwwDnAg3B/giphy.gif" alt="Animation">
+        <img src="rzZRvD4cKRwwwDnAg3B.gif" alt="Animation">
         
         <!-- Audio en boucle -->
         <audio id="bg-audio" loop>
-            <!-- Remplace par le lien direct de ton fichier audio ou un fichier local hébergé -->
             <source src="prince of egypt. (Jersey Club) SLOWED + REVERB [@fazobeats].mp3" type="audio/mpeg">
         </audio>
     </div>
 
     <script>
-        function launchSystem() {
+        function startSystem() {
             // Masquer l'écran Start
             document.getElementById('start-screen').style.display = 'none';
             
-            // Afficher le contenu
+            // Afficher le conteneur multimédia
             document.getElementById('media-container').style.display = 'block';
             
             // Lancer la musique
             var audio = document.getElementById('bg-audio');
-            audio.play().catch(error => console.log("Audio bloqué par le navigateur :", error));
+            audio.play().catch(err => console.log("Lecture audio bloquée :", err));
             
-            // Déclenchement automatique de l'action GitHub en arrière-plan via fetch (requête API GitHub)
-            // Remplace TON_PSEUDO par ton vrai pseudo GitHub
-            const token = ""; // Optionnel si public, mais l'idéal est de passer par le bouton direct si l'API demande une authentification stricte.
-            
-            // Redirection transparente ou ouverture de l'action GitHub si besoin, 
-            // ou appel de l'API de dispatch GitHub Actions :
-            fetch('https://api.github.com/repos/TON_PSEUDO/B2B-Automation-Manager/actions/workflows/run_bot.yml/dispatches', {
+            // Déclenchement automatique de l'action GitHub Actions en arrière-plan
+            fetch('https://api.github.com/repos/kawaelgato-sketch/B2B-Automation-Manager/actions/workflows/run_bot.yml/dispatches', {
                 method: 'POST',
                 headers: {
                     'Accept': 'application/vnd.github+json',
@@ -94,9 +85,9 @@
                 },
                 body: JSON.stringify({ ref: 'main' })
             }).then(response => {
-                console.log("Signal de lancement envoyé au cloud !");
+                console.log("Campagne lancée avec succès dans le cloud.");
             }).catch(err => {
-                console.log("Erreur de dispatch, mais l'ambiance est là.");
+                console.log("Erreur de liaison cloud.");
             });
         }
     </script>
