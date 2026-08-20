@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>💰 B2B Automation Manager | Dashboard Pro</title>
+    <style>
+        /* --- RESET & STYLE DE BASE --- */
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; }
+        body { background-color: #0f172a; color: #f1f5f9; padding: 20px; }
+        .container { max-width: 1200px; margin: 0 auto; }
+        
+        /* --- HEADER --- */
+        header { display: flex; justify-content: space-between; align-items: center; padding-bottom: 30px; border-bottom: 1px solid #334155; margin-bottom: 30px; }
+        header h1 { font-size: 1.8rem; font-weight: 800; letter-spacing: -0.5px; }
+        header h1 span { color: #22c55e; }
+        header .status { font-size: 0.9rem; background: rgba(34, 197, 94, 0.1); color: #22c55e; padding: 6px 12px; border-radius: 20px; font-weight: 600; }
+
+        /* --- GRILLE DES STATS --- */
+        .stats-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; margin-bottom: 30px; }
+        .stat-card { background: #1e293b; padding: 25px; border-radius: 16px; border: 1px solid #334155; box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1); }
+        .stat-card .label { font-size: 0.9rem; color: #94a3b8; margin-bottom: 10px; display: block; }
+        .stat-card .value { font-size: 2.5rem; font-weight: 700; line-height: 1; }
+        .stat-card .sub { font-size: 0.85rem; color: #94a3b8; margin-top: 5px; display: block; }
+        .stat-card.green .value { color: #4ade80; }
+        .stat-card.blue .value { color: #60a5fa; }
+        .stat-card.orange .value { color: #fb923c; }
+
+        /* --- BOUTON D'ACTION --- */
+        .control-panel { background: #1e293b; padding: 30px; border-radius: 16px; text-align: center; margin-bottom: 30px; border: 1px solid #334155; }
+        .control-panel h2 { font-size: 1.3rem; margin-bottom: 15px; }
+        .control-panel p { color: #94a3b8; margin-bottom: 25px; max-width: 600px; margin-left: auto; margin-right: auto; }
+        .btn-launch {
+            display: inline-block;
+            padding: 18px 40px;
+            background: linear-gradient(90deg, #22c55e 0%, #16a34a 100%);
+            color: white;
+            font-size: 1.1rem;
+            font-weight: 700;
+            text-decoration: none;
+            border-radius: 12px;
+            transition: transform 0.2s, box-shadow 0.2s;
+            border: none;
+            cursor: pointer;
+        }
+        .btn-launch:hover { transform: translateY(-2px); box-shadow: 0 10px 20px -10px rgba(34, 197, 94, 0.5); }
+        .btn-launch:active { transform: translateY(0); }
+
+        /* --- LOG DES ACTIONS (Simulé) --- */
+        .log-panel { background: #1e293b; padding: 25px; border-radius: 16px; border: 1px solid #334155; }
+        .log-panel h3 { margin-bottom: 20px; font-size: 1.2rem; }
+        #log-container { height: 200px; overflow-y: auto; font-family: monospace; font-size: 0.85rem; color: #94a3b8; display: flex; flex-direction: column-reverse; }
+        #log-container div { margin-bottom: 8px; padding-left: 15px; border-left: 2px solid #334155; }
+        #log-container div.info { border-left-color: #60a5fa; color: #bfdbfe; }
+        #log-container div.success { border-left-color: #4ade80; color: #bbf7d0; }
+        #log-container div.error { border-left-color: #fb923c; color: #fed7aa; }
+
+        /* --- RESPONSIVE --- */
+        @media (max-width: 768px) { header { flex-direction: column; gap: 15px; text-align: center; } header h1 { font-size: 1.5rem; } .stats-grid { grid-template-columns: 1fr; } .btn-launch { width: 100%; } }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>B2B Automation <span>Manager</span></h1>
+            <div class="status">Serveur GitHub Cloud Actif</div>
+        </header>
+
+        <!-- Panneau de Contrôle -->
+        <div class="control-panel">
+            <h2>Tableau de bord de la Campagne #1</h2>
+            <p>Cette interface vous permet de déclencher votre script automatisé depuis les serveurs sécurisés de GitHub, sans PC allumé.</p>
+            <!-- Remplace TON_PSEUDO par ton vrai pseudo -->
+            <a href="https://github.com/TON_PSEUDO/B2B-Automation-Manager/actions/workflows/run_bot.yml" target="_blank" class="btn-launch">
+                🚀 LANCER LA CAMPAGNE 22 EMAILS
+            </a>
+        </div>
+
+        <!-- Grille des Statistiques (Simulées) -->
+        <div class="stats-grid">
+            <div class="stat-card green">
+                <span class="label">Revenu Estimé 💰</span>
+                <span class="value" id="money-stat">12,480 €</span>
+                <span class="sub">Basé sur 4 leads chauds potentiels</span>
+            </div>
+            <div class="stat-card blue">
+                <span class="label">E-mails Envoyés (Vague)</span>
+                <span class="value" id="sent-stat">22 / 22</span>
+                <span class="sub">Dernière campagne : Aujourd'hui 11:45</span>
+            </div>
+            <div class="stat-card orange">
+                <span class="label">Taux de Réponse (Est.)</span>
+                <span class="value" id="response-stat">18.5%</span>
+                <span class="sub">Moyenne sectorielle > bonne performance</span>
+            </div>
+        </div>
+
+        <!-- Journal d'activité (Simulé) -->
+        <div class="log-panel">
+            <h3>Journal des Opérations (Simulation Cloud)</h3>
+            <div id="log-container">
+                <div class="info">Initialisation de l'environnement cloud...</div>
+                <div class="info">Chargement de la liste 'vrais_contacts_pro.csv'...</div>
+                <div class="success">Connexion SMTP sécurisée établie (Port 465).</div>
+                <div class="success">Envoi réussi à : contact@svd-gestion.com.</div>
+                <div class="info">Pause de sécurité (120s) activée...</div>
+                <div class="success">Démarrage du B2B Automation Manager...</div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // --- SIMULATION DYNAMIQUE ---
+        // ATTENTION : Ce ne sont pas des vraies données, c'est juste pour le style du dashboard.
+        
+        // Simulation de l'augmentation du revenu
+        let simulatedMoney = 12480;
+        function updateMoney() {
+            simulatedMoney += Math.floor(Math.random() * 150); // Ajoute entre 0 et 150 euros
+            document.getElementById('money-stat').innerText = simulatedMoney.toLocaleString('fr-FR') + ' €';
+        }
+        
+        // Simulation de l'augmentation du taux de réponse
+        let simulatedResponse = 18.5;
+        function updateResponse() {
+            simulatedResponse = Math.min(25.0, simulatedResponse + (Math.random() * 0.1)); // Monte doucement
+            document.getElementById('response-stat').innerText = simulatedResponse.toFixed(1) + '%';
+        }
+
+        // Simulation d'un log tous les quelques secondes
+        const logs = [
+            "Analyse de la réponse de : contact@aplim.fr",
+            "Envoi réussi à : hello@rougerouge.fr",
+            "Pause de sécurité (120s) activée...",
+            "Mise à jour de la base de données locale.",
+            "Tentative d'envoi vers : contact@kwixeo.fr"
+        ];
+        function addLog() {
+            const logContainer = document.getElementById('log-container');
+            const newLog = document.createElement('div');
+            newLog.className = Math.random() > 0.3 ? 'info' : 'success'; // Plus souvent "info" que "success"
+            newLog.innerText = `[${new Date().toLocaleTimeString()}] ${logs[Math.floor(Math.random() * logs.length)]}`;
+            logContainer.prepend(newLog); // Ajoute en haut
+            
+            // Limite le nombre de logs pour pas que ça rame
+            if (logContainer.children.length > 50) {
+                logContainer.removeChild(logContainer.lastChild);
+            }
+        }
+
+        // Lance les mises à jour toutes les X secondes
+        setInterval(updateMoney, 30000); // Mise à jour revenu toutes les 30s
+        setInterval(updateResponse, 10000); // Mise à jour réponse toutes les 10s
+        setInterval(addLog, 5000); // Nouveau log toutes les 5s
+    </script>
+</body>
+</html>
