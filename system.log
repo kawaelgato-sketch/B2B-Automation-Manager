@@ -1,0 +1,149 @@
+2026-08-20 21:26:14,879 - INFO - Début du balayage national des départements pour le secteur : Tech_Numerique
+2026-08-20 21:26:14,879 - INFO - [Dept 01 - Ain] 2 leads générés (Fichier: leads_Tech_Numerique_dept_01_2026-08-20.csv)
+2026-08-20 21:26:14,880 - INFO - [Dept 02 - Aisne] 2 leads générés (Fichier: leads_Tech_Numerique_dept_02_2026-08-20.csv)
+2026-08-20 21:26:14,881 - INFO - [Dept 03 - Allier] 2 leads générés (Fichier: leads_Tech_Numerique_dept_03_2026-08-20.csv)
+2026-08-20 21:26:14,881 - INFO - [Dept 04 - Alpes-de-Haute-Provence] 2 leads générés (Fichier: leads_Tech_Numerique_dept_04_2026-08-20.csv)
+2026-08-20 21:26:14,882 - INFO - [Dept 05 - Hautes-Alpes] 2 leads générés (Fichier: leads_Tech_Numerique_dept_05_2026-08-20.csv)
+2026-08-20 21:26:14,882 - INFO - [Dept 06 - Alpes-Maritimes] 2 leads générés (Fichier: leads_Tech_Numerique_dept_06_2026-08-20.csv)
+2026-08-20 21:26:14,883 - INFO - [Dept 07 - Ardèche] 2 leads générés (Fichier: leads_Tech_Numerique_dept_07_2026-08-20.csv)
+2026-08-20 21:26:14,883 - INFO - [Dept 08 - Ardennes] 2 leads générés (Fichier: leads_Tech_Numerique_dept_08_2026-08-20.csv)
+2026-08-20 21:26:14,883 - INFO - [Dept 09 - Ariège] 2 leads générés (Fichier: leads_Tech_Numerique_dept_09_2026-08-20.csv)
+2026-08-20 21:26:14,884 - INFO - [Dept 10 - Aube] 2 leads générés (Fichier: leads_Tech_Numerique_dept_10_2026-08-20.csv)
+2026-08-20 21:26:14,885 - INFO - [Dept 11 - Aude] 2 leads générés (Fichier: leads_Tech_Numerique_dept_11_2026-08-20.csv)
+2026-08-20 21:26:14,885 - INFO - [Dept 12 - Aveyron] 2 leads générés (Fichier: leads_Tech_Numerique_dept_12_2026-08-20.csv)
+2026-08-20 21:26:14,886 - INFO - [Dept 13 - Bouches-du-Rhône] 2 leads générés (Fichier: leads_Tech_Numerique_dept_13_2026-08-20.csv)
+2026-08-20 21:26:14,886 - INFO - [Dept 14 - Calvados] 2 leads générés (Fichier: leads_Tech_Numerique_dept_14_2026-08-20.csv)
+2026-08-20 21:26:14,887 - INFO - [Dept 15 - Cantal] 2 leads générés (Fichier: leads_Tech_Numerique_dept_15_2026-08-20.csv)
+2026-08-20 21:26:14,887 - INFO - [Dept 16 - Charente] 2 leads générés (Fichier: leads_Tech_Numerique_dept_16_2026-08-20.csv)
+2026-08-20 21:26:14,888 - INFO - [Dept 17 - Charente-Maritime] 2 leads générés (Fichier: leads_Tech_Numerique_dept_17_2026-08-20.csv)
+2026-08-20 21:26:14,888 - INFO - [Dept 18 - Cher] 2 leads générés (Fichier: leads_Tech_Numerique_dept_18_2026-08-20.csv)
+2026-08-20 21:26:14,889 - INFO - [Dept 19 - Corrèze] 2 leads générés (Fichier: leads_Tech_Numerique_dept_19_2026-08-20.csv)
+2026-08-20 21:26:14,890 - INFO - [Dept 2A - Corse-du-Sud] 2 leads générés (Fichier: leads_Tech_Numerique_dept_2A_2026-08-20.csv)
+2026-08-20 21:26:14,890 - INFO - [Dept 2B - Haute-Corse] 2 leads générés (Fichier: leads_Tech_Numerique_dept_2B_2026-08-20.csv)
+2026-08-20 21:26:14,891 - INFO - [Dept 21 - Côte-d'Or] 2 leads générés (Fichier: leads_Tech_Numerique_dept_21_2026-08-20.csv)
+2026-08-20 21:26:14,891 - INFO - [Dept 22 - Côtes-d'Armor] 2 leads générés (Fichier: leads_Tech_Numerique_dept_22_2026-08-20.csv)
+2026-08-20 21:26:14,892 - INFO - [Dept 23 - Creuse] 2 leads générés (Fichier: leads_Tech_Numerique_dept_23_2026-08-20.csv)
+2026-08-20 21:26:14,893 - INFO - [Dept 24 - Dordogne] 2 leads générés (Fichier: leads_Tech_Numerique_dept_24_2026-08-20.csv)
+2026-08-20 21:26:14,893 - INFO - [Dept 25 - Doubs] 2 leads générés (Fichier: leads_Tech_Numerique_dept_25_2026-08-20.csv)
+2026-08-20 21:26:14,894 - INFO - [Dept 26 - Drôme] 2 leads générés (Fichier: leads_Tech_Numerique_dept_26_2026-08-20.csv)
+2026-08-20 21:26:14,894 - INFO - [Dept 27 - Eure] 2 leads générés (Fichier: leads_Tech_Numerique_dept_27_2026-08-20.csv)
+2026-08-20 21:26:14,895 - INFO - [Dept 28 - Eure-et-Loir] 2 leads générés (Fichier: leads_Tech_Numerique_dept_28_2026-08-20.csv)
+2026-08-20 21:26:14,895 - INFO - [Dept 29 - Finistère] 2 leads générés (Fichier: leads_Tech_Numerique_dept_29_2026-08-20.csv)
+2026-08-20 21:26:14,896 - INFO - [Dept 30 - Gard] 2 leads générés (Fichier: leads_Tech_Numerique_dept_30_2026-08-20.csv)
+2026-08-20 21:26:14,896 - INFO - [Dept 31 - Haute-Garonne] 2 leads générés (Fichier: leads_Tech_Numerique_dept_31_2026-08-20.csv)
+2026-08-20 21:26:14,897 - INFO - [Dept 32 - Gers] 2 leads générés (Fichier: leads_Tech_Numerique_dept_32_2026-08-20.csv)
+2026-08-20 21:26:14,897 - INFO - [Dept 33 - Gironde] 2 leads générés (Fichier: leads_Tech_Numerique_dept_33_2026-08-20.csv)
+2026-08-20 21:26:14,898 - INFO - [Dept 34 - Hérault] 2 leads générés (Fichier: leads_Tech_Numerique_dept_34_2026-08-20.csv)
+2026-08-20 21:26:14,898 - INFO - [Dept 35 - Ille-et-Vilaine] 2 leads générés (Fichier: leads_Tech_Numerique_dept_35_2026-08-20.csv)
+2026-08-20 21:26:14,899 - INFO - [Dept 36 - Indre] 2 leads générés (Fichier: leads_Tech_Numerique_dept_36_2026-08-20.csv)
+2026-08-20 21:26:14,900 - INFO - [Dept 37 - Indre-et-Loire] 2 leads générés (Fichier: leads_Tech_Numerique_dept_37_2026-08-20.csv)
+2026-08-20 21:26:14,900 - INFO - [Dept 38 - Isère] 2 leads générés (Fichier: leads_Tech_Numerique_dept_38_2026-08-20.csv)
+2026-08-20 21:26:14,901 - INFO - [Dept 39 - Jura] 2 leads générés (Fichier: leads_Tech_Numerique_dept_39_2026-08-20.csv)
+2026-08-20 21:26:14,901 - INFO - [Dept 40 - Landes] 2 leads générés (Fichier: leads_Tech_Numerique_dept_40_2026-08-20.csv)
+2026-08-20 21:26:14,902 - INFO - [Dept 41 - Loir-et-Cher] 2 leads générés (Fichier: leads_Tech_Numerique_dept_41_2026-08-20.csv)
+2026-08-20 21:26:14,902 - INFO - [Dept 42 - Loire] 2 leads générés (Fichier: leads_Tech_Numerique_dept_42_2026-08-20.csv)
+2026-08-20 21:26:14,903 - INFO - [Dept 43 - Haute-Loire] 2 leads générés (Fichier: leads_Tech_Numerique_dept_43_2026-08-20.csv)
+2026-08-20 21:26:14,904 - INFO - [Dept 44 - Loire-Atlantique] 2 leads générés (Fichier: leads_Tech_Numerique_dept_44_2026-08-20.csv)
+2026-08-20 21:26:14,904 - INFO - [Dept 45 - Loiret] 2 leads générés (Fichier: leads_Tech_Numerique_dept_45_2026-08-20.csv)
+2026-08-20 21:26:14,905 - INFO - [Dept 46 - Lot] 2 leads générés (Fichier: leads_Tech_Numerique_dept_46_2026-08-20.csv)
+2026-08-20 21:26:14,905 - INFO - [Dept 47 - Lot-et-Garonne] 2 leads générés (Fichier: leads_Tech_Numerique_dept_47_2026-08-20.csv)
+2026-08-20 21:26:14,906 - INFO - [Dept 48 - Lozère] 2 leads générés (Fichier: leads_Tech_Numerique_dept_48_2026-08-20.csv)
+2026-08-20 21:26:14,906 - INFO - [Dept 49 - Maine-et-Loire] 2 leads générés (Fichier: leads_Tech_Numerique_dept_49_2026-08-20.csv)
+2026-08-20 21:26:14,907 - INFO - [Dept 50 - Manche] 2 leads générés (Fichier: leads_Tech_Numerique_dept_50_2026-08-20.csv)
+2026-08-20 21:26:14,907 - INFO - [Dept 51 - Marne] 2 leads générés (Fichier: leads_Tech_Numerique_dept_51_2026-08-20.csv)
+2026-08-20 21:26:14,908 - INFO - [Dept 52 - Haute-Marne] 2 leads générés (Fichier: leads_Tech_Numerique_dept_52_2026-08-20.csv)
+2026-08-20 21:26:14,908 - INFO - [Dept 53 - Mayenne] 2 leads générés (Fichier: leads_Tech_Numerique_dept_53_2026-08-20.csv)
+2026-08-20 21:26:14,909 - INFO - [Dept 54 - Meurthe-et-Moselle] 2 leads générés (Fichier: leads_Tech_Numerique_dept_54_2026-08-20.csv)
+2026-08-20 21:26:14,909 - INFO - [Dept 55 - Meuse] 2 leads générés (Fichier: leads_Tech_Numerique_dept_55_2026-08-20.csv)
+2026-08-20 21:26:14,910 - INFO - [Dept 56 - Morbihan] 2 leads générés (Fichier: leads_Tech_Numerique_dept_56_2026-08-20.csv)
+2026-08-20 21:26:14,910 - INFO - [Dept 57 - Moselle] 2 leads générés (Fichier: leads_Tech_Numerique_dept_57_2026-08-20.csv)
+2026-08-20 21:26:14,911 - INFO - [Dept 58 - Nièvre] 2 leads générés (Fichier: leads_Tech_Numerique_dept_58_2026-08-20.csv)
+2026-08-20 21:26:14,911 - INFO - [Dept 59 - Nord] 2 leads générés (Fichier: leads_Tech_Numerique_dept_59_2026-08-20.csv)
+2026-08-20 21:26:14,912 - INFO - [Dept 60 - Oise] 2 leads générés (Fichier: leads_Tech_Numerique_dept_60_2026-08-20.csv)
+2026-08-20 21:26:14,913 - INFO - [Dept 61 - Orne] 2 leads générés (Fichier: leads_Tech_Numerique_dept_61_2026-08-20.csv)
+2026-08-20 21:26:14,913 - INFO - [Dept 62 - Pas-de-Calais] 2 leads générés (Fichier: leads_Tech_Numerique_dept_62_2026-08-20.csv)
+2026-08-20 21:26:14,914 - INFO - [Dept 63 - Puy-de-Dôme] 2 leads générés (Fichier: leads_Tech_Numerique_dept_63_2026-08-20.csv)
+2026-08-20 21:26:14,914 - INFO - [Dept 64 - Pyrénées-Atlantiques] 2 leads générés (Fichier: leads_Tech_Numerique_dept_64_2026-08-20.csv)
+2026-08-20 21:26:14,915 - INFO - [Dept 65 - Hautes-Pyrénées] 2 leads générés (Fichier: leads_Tech_Numerique_dept_65_2026-08-20.csv)
+2026-08-20 21:26:14,915 - INFO - [Dept 66 - Pyrénées-Orientales] 2 leads générés (Fichier: leads_Tech_Numerique_dept_66_2026-08-20.csv)
+2026-08-20 21:26:14,916 - INFO - [Dept 67 - Bas-Rhin] 2 leads générés (Fichier: leads_Tech_Numerique_dept_67_2026-08-20.csv)
+2026-08-20 21:26:14,916 - INFO - [Dept 68 - Haut-Rhin] 2 leads générés (Fichier: leads_Tech_Numerique_dept_68_2026-08-20.csv)
+2026-08-20 21:26:14,917 - INFO - [Dept 69 - Rhône] 2 leads générés (Fichier: leads_Tech_Numerique_dept_69_2026-08-20.csv)
+2026-08-20 21:26:14,917 - INFO - [Dept 70 - Haute-Saône] 2 leads générés (Fichier: leads_Tech_Numerique_dept_70_2026-08-20.csv)
+2026-08-20 21:26:14,918 - INFO - [Dept 71 - Saône-et-Loire] 2 leads générés (Fichier: leads_Tech_Numerique_dept_71_2026-08-20.csv)
+2026-08-20 21:26:14,919 - INFO - [Dept 72 - Sarthe] 2 leads générés (Fichier: leads_Tech_Numerique_dept_72_2026-08-20.csv)
+2026-08-20 21:26:14,919 - INFO - [Dept 73 - Savoie] 2 leads générés (Fichier: leads_Tech_Numerique_dept_73_2026-08-20.csv)
+2026-08-20 21:26:14,920 - INFO - [Dept 74 - Haute-Savoie] 2 leads générés (Fichier: leads_Tech_Numerique_dept_74_2026-08-20.csv)
+2026-08-20 21:26:14,920 - INFO - [Dept 75 - Paris] 2 leads générés (Fichier: leads_Tech_Numerique_dept_75_2026-08-20.csv)
+2026-08-20 21:26:14,921 - INFO - [Dept 76 - Seine-Maritime] 2 leads générés (Fichier: leads_Tech_Numerique_dept_76_2026-08-20.csv)
+2026-08-20 21:26:14,921 - INFO - [Dept 77 - Seine-et-Marne] 2 leads générés (Fichier: leads_Tech_Numerique_dept_77_2026-08-20.csv)
+2026-08-20 21:26:14,922 - INFO - [Dept 78 - Yvelines] 2 leads générés (Fichier: leads_Tech_Numerique_dept_78_2026-08-20.csv)
+2026-08-20 21:26:14,922 - INFO - [Dept 79 - Deux-Sèvres] 2 leads générés (Fichier: leads_Tech_Numerique_dept_79_2026-08-20.csv)
+2026-08-20 21:26:14,923 - INFO - [Dept 80 - Somme] 2 leads générés (Fichier: leads_Tech_Numerique_dept_80_2026-08-20.csv)
+2026-08-20 21:26:14,923 - INFO - [Dept 81 - Tarn] 2 leads générés (Fichier: leads_Tech_Numerique_dept_81_2026-08-20.csv)
+2026-08-20 21:26:14,924 - INFO - [Dept 82 - Tarn-et-Garonne] 2 leads générés (Fichier: leads_Tech_Numerique_dept_82_2026-08-20.csv)
+2026-08-20 21:26:14,924 - INFO - [Dept 83 - Var] 2 leads générés (Fichier: leads_Tech_Numerique_dept_83_2026-08-20.csv)
+2026-08-20 21:26:14,925 - INFO - [Dept 84 - Vaucluse] 2 leads générés (Fichier: leads_Tech_Numerique_dept_84_2026-08-20.csv)
+2026-08-20 21:26:14,925 - INFO - [Dept 85 - Vendée] 2 leads générés (Fichier: leads_Tech_Numerique_dept_85_2026-08-20.csv)
+2026-08-20 21:26:14,926 - INFO - [Dept 86 - Vienne] 2 leads générés (Fichier: leads_Tech_Numerique_dept_86_2026-08-20.csv)
+2026-08-20 21:26:14,926 - INFO - [Dept 87 - Haute-Vienne] 2 leads générés (Fichier: leads_Tech_Numerique_dept_87_2026-08-20.csv)
+2026-08-20 21:26:14,927 - INFO - [Dept 88 - Vosges] 2 leads générés (Fichier: leads_Tech_Numerique_dept_88_2026-08-20.csv)
+2026-08-20 21:26:14,927 - INFO - [Dept 89 - Yonne] 2 leads générés (Fichier: leads_Tech_Numerique_dept_89_2026-08-20.csv)
+2026-08-20 21:26:14,928 - INFO - [Dept 90 - Territoire de Belfort] 2 leads générés (Fichier: leads_Tech_Numerique_dept_90_2026-08-20.csv)
+2026-08-20 21:26:14,928 - INFO - [Dept 91 - Essonne] 2 leads générés (Fichier: leads_Tech_Numerique_dept_91_2026-08-20.csv)
+2026-08-20 21:26:14,929 - INFO - [Dept 92 - Hauts-de-Seine] 2 leads générés (Fichier: leads_Tech_Numerique_dept_92_2026-08-20.csv)
+2026-08-20 21:26:14,929 - INFO - [Dept 93 - Seine-Saint-Denis] 2 leads générés (Fichier: leads_Tech_Numerique_dept_93_2026-08-20.csv)
+2026-08-20 21:26:14,930 - INFO - [Dept 94 - Val-de-Marne] 2 leads générés (Fichier: leads_Tech_Numerique_dept_94_2026-08-20.csv)
+2026-08-20 21:26:14,931 - INFO - [Dept 95 - Val-d'Oise] 2 leads générés (Fichier: leads_Tech_Numerique_dept_95_2026-08-20.csv)
+2026-08-20 21:26:14,931 - INFO - Génération nationale terminée. Total global : 192 leads répartis sur tous les départements.
+2026-08-20 21:27:24,749 - INFO - Début du cycle de vérification des prospects en attente.
+2026-08-20 21:27:57,243 - INFO - Démarrage du cycle de scraping/migration des prospects.
+2026-08-20 21:27:57,244 - INFO - Terminé : 2 nouveau(x) prospect(s) ajouté(s) à cibles_agences.csv.
+2026-08-20 21:32:28,303 - INFO - Début du cycle de vérification des prospects en attente.
+2026-08-20 21:37:32,078 - INFO - Début du cycle de vérification des prospects en attente.
+2026-08-20 21:42:35,617 - INFO - Début du cycle de vérification des prospects en attente.
+2026-08-20 21:47:39,354 - INFO - Début du cycle de vérification des prospects en attente.
+2026-08-20 21:52:40,256 - INFO - Début du cycle de vérification des prospects en attente.
+2026-08-20 21:54:26,653 - INFO - Démarrage du cycle de scraping/migration massive des prospects.
+2026-08-20 21:54:26,654 - INFO - Migration massive terminée : 2 nouveau(x) prospect(s) ajouté(s), 0 doublons ignorés dans cibles_agences.csv.
+2026-08-20 21:55:47,148 - INFO - Démarrage du cycle de scraping/migration massive des prospects.
+2026-08-20 21:55:47,149 - INFO - Migration massive terminée : 1 nouveau(x) prospect(s) ajouté(s), 1 doublons ignorés dans cibles_agences.csv.
+2026-08-20 21:57:42,931 - INFO - Début du cycle de vérification des prospects en attente.
+2026-08-20 21:59:44,485 - INFO - Démarrage du cycle de scraping/migration massive des prospects.
+2026-08-20 21:59:44,485 - INFO - Migration massive terminée : 0 nouveau(x) prospect(s) ajouté(s), 2 doublons ignorés dans cibles_agences.csv.
+2026-08-20 22:02:47,345 - INFO - Début du cycle de vérification des prospects en attente.
+2026-08-20 22:04:54,334 - INFO - Début du cycle de vérification des prospects en attente.
+2026-08-20 22:05:10,732 - INFO - Démarrage du cycle de scraping/migration massive des prospects.
+2026-08-20 22:05:10,733 - INFO - Migration massive terminée : 0 nouveau(x) prospect(s) ajouté(s), 2 doublons ignorés dans cibles_agences.csv.
+2026-08-20 22:07:51,955 - INFO - Début du cycle de vérification des prospects en attente.
+2026-08-20 22:09:59,017 - INFO - Début du cycle de vérification des prospects en attente.
+2026-08-20 22:12:56,342 - INFO - Début du cycle de vérification des prospects en attente.
+2026-08-20 22:15:03,716 - INFO - Début du cycle de vérification des prospects en attente.
+2026-08-20 22:17:47,884 - INFO - Démarrage de la synchronisation avec le carnet d'adresses réel.
+2026-08-20 22:18:01,177 - INFO - Début du cycle de vérification des prospects en attente.
+2026-08-20 22:20:08,027 - INFO - Début du cycle de vérification des prospects en attente.
+2026-08-20 22:23:06,153 - INFO - Début du cycle de vérification des prospects en attente.
+2026-08-20 22:25:12,227 - INFO - Début du cycle de vérification des prospects en attente.
+2026-08-20 22:28:10,609 - INFO - Début du cycle de vérification des prospects en attente.
+2026-08-20 22:30:17,608 - INFO - Début du cycle de vérification des prospects en attente.
+2026-08-20 22:33:15,188 - INFO - Début du cycle de vérification des prospects en attente.
+2026-08-20 22:35:22,113 - INFO - Début du cycle de vérification des prospects en attente.
+2026-08-20 22:38:19,427 - INFO - Début du cycle de vérification des prospects en attente.
+2026-08-20 22:40:26,486 - INFO - Début du cycle de vérification des prospects en attente.
+2026-08-20 22:43:23,561 - INFO - Début du cycle de vérification des prospects en attente.
+2026-08-20 22:45:30,672 - INFO - Début du cycle de vérification des prospects en attente.
+2026-08-20 22:48:27,720 - INFO - Début du cycle de vérification des prospects en attente.
+2026-08-20 22:50:34,858 - INFO - Début du cycle de vérification des prospects en attente.
+2026-08-20 22:53:31,823 - INFO - Début du cycle de vérification des prospects en attente.
+2026-08-20 22:54:03,256 - INFO - Début du cycle de vérification des prospects en attente.
+2026-08-20 22:54:25,105 - INFO - Démarrage de la synchronisation avec le carnet d'adresses réel.
+2026-08-20 22:54:25,106 - INFO - Synchro réussie : 22 ajoutés, 0 doublons ignorés.
+2026-08-20 22:55:08,699 - INFO - Démarrage de la synchronisation avec le carnet d'adresses réel.
+2026-08-20 22:55:08,700 - INFO - Synchro réussie : 0 ajoutés, 22 doublons ignorés.
+2026-08-20 22:55:40,023 - INFO - Début du cycle de vérification des prospects en attente.
+2026-08-20 22:58:36,347 - INFO - Début du cycle de vérification des prospects en attente.
+2026-08-20 22:59:07,448 - INFO - Début du cycle de vérification des prospects en attente.
+2026-08-20 23:01:03,936 - INFO - Début du cycle de vérification des prospects en attente.
+2026-08-20 23:03:59,211 - INFO - Début du cycle de vérification des prospects en attente.
+2026-08-20 23:04:31,540 - INFO - Début du cycle de vérification des prospects en attente.
+2026-08-20 23:06:27,841 - INFO - Début du cycle de vérification des prospects en attente.
