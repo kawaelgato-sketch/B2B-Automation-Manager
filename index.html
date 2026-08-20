@@ -3,102 +3,102 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>B2B Automation Manager - Terminal</title>
+    <title>B2B Automation Manager</title>
     <style>
-        * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Courier New', Courier, monospace; }
-        body { background-color: #000000; color: #00ff66; padding: 30px; }
-        .container { max-width: 1000px; margin: 0 auto; border: 1px solid #00ff66; padding: 30px; background-color: #050505; box-shadow: 0 0 20px rgba(0, 255, 102, 0.1); }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body, html { width: 100%; height: 100%; background: #000; overflow: hidden; font-family: sans-serif; }
         
-        header { display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #00ff66; padding-bottom: 20px; margin-bottom: 30px; }
-        header h1 { font-size: 1.4rem; letter-spacing: 2px; text-transform: uppercase; }
-        header .status { font-size: 0.85rem; border: 1px solid #00ff66; padding: 5px 10px; background: rgba(0, 255, 102, 0.05); }
-
-        .section-title { font-size: 0.9rem; text-transform: uppercase; letter-spacing: 1px; color: #00aa44; margin-bottom: 10px; }
-        
-        .control-panel { margin-bottom: 30px; }
-        .btn-launch {
-            display: block;
-            width: 100%;
-            padding: 15px;
-            background: #000000;
-            color: #00ff66;
-            border: 1px solid #00ff66;
-            font-size: 1rem;
-            font-weight: bold;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            text-align: center;
-            text-decoration: none;
+        /* Écran de démarrage START */
+        #start-screen {
+            position: fixed;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background: #000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 999;
             cursor: pointer;
-            transition: background 0.2s, color 0.2s;
         }
-        .btn-launch:hover { background: #00ff66; color: #000000; }
+        #start-btn {
+            color: #fff;
+            font-size: 3rem;
+            font-weight: bold;
+            letter-spacing: 5px;
+            text-transform: uppercase;
+            border: 2px solid #fff;
+            padding: 20px 50px;
+            background: transparent;
+            transition: 0.3s;
+        }
+        #start-screen:hover #start-btn {
+            background: #fff;
+            color: #000;
+        }
 
-        .terminal-panel { border: 1px solid #00aa44; padding: 20px; background: #000000; }
-        #terminal-log { height: 250px; overflow-y: auto; font-size: 0.85rem; line-height: 1.5; color: #00ff66; }
-        #terminal-log .line { margin-bottom: 5px; }
-        #terminal-log .dim { color: #008833; }
-
-        @media (max-width: 768px) { header { flex-direction: column; gap: 15px; text-align: center; } }
+        /* Contenu multimédia caché au départ */
+        #media-container {
+            position: fixed;
+            top: 0; left: 0; width: 100%; height: 100%;
+            display: none;
+            z-index: 10;
+        }
+        #media-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
     </style>
 </head>
 <body>
-    <div class="container">
-        <header>
-            <h1>B2B_Automation_Manager // SECURE_CORE</h1>
-            <div class="status">SYSTEM: ONLINE</div>
-        </header>
 
-        <div class="control-panel">
-            <div class="section-title">> Déclenchement de la procédure d'exécution</div>
-            <!-- Remplacement de TON_PSEUDO par ton pseudo GitHub -->
-            <a href="https://github.com/TON_PSEUDO/B2B-Automation-Manager/actions/workflows/run_bot.yml" target="_blank" class="btn-launch">
-                [ EXécuter la campagne distante ]
-            </a>
-        </div>
+    <!-- Écran Start -->
+    <div id="start-screen" onclick="launchSystem()">
+        <div id="start-btn">START</div>
+    </div>
 
-        <div class="terminal-panel">
-            <div class="section-title">> Flux d'exécution des processus distants</div>
-            <div id="terminal-log">
-                <div class="line dim">[SYSTEM] Initialisation de l'interface de contrôle...</div>
-                <div class="line dim">[SYSTEM] Connexion au dépôt distant établie.</div>
-                <div class="line">[OK] Environnement GitHub Actions prêt.</div>
-                <div class="line">[INFO] En attente du signal d'exécution manuelle...</div>
-            </div>
-        </div>
+    <!-- Contenu multimédia en arrière-plan -->
+    <div id="media-container">
+        <!-- GIF en boucle -->
+        <img src="https://media.giphy.com/media/rzZRvD4cKRwwwDnAg3B/giphy.gif" alt="Animation">
+        
+        <!-- Audio en boucle -->
+        <audio id="bg-audio" loop>
+            <!-- Remplace par le lien direct de ton fichier audio ou un fichier local hébergé -->
+            <source src="prince of egypt. (Jersey Club) SLOWED + REVERB [@fazobeats].mp3" type="audio/mpeg">
+        </audio>
     </div>
 
     <script>
-        // Récupération dynamique des derniers statuts GitHub Actions en temps réel via l'API publique
-        async function fetchGitHubStatus() {
-            const logContainer = document.getElementById('terminal-log');
-            try {
-                // Remplace TON_PSEUDO par ton vrai nom d'utilisateur GitHub
-                const response = await fetch('https://api.github.com/repos/TON_PSEUDO/B2B-Automation-Manager/actions/runs');
-                if (!response.ok) return;
-                const data = await response.json();
-                
-                if (data.workflow_runs && data.workflow_runs.length > 0) {
-                    const lastRun = data.workflow_runs[0];
-                    const dateStr = new Date(lastRun.created_at).toLocaleTimeString();
-                    const statusText = `[API_GITHUB] Dernier statut du bot : ${lastRun.status.toUpperCase()} (${lastRun.conclusion || 'en cours'}) à ${dateStr}`;
-                    
-                    // Évite de spammer les mêmes lignes si elles y sont déjà
-                    if (!logContainer.innerHTML.includes(statusText)) {
-                        const newDiv = document.createElement('div');
-                        newDiv.className = 'line';
-                        newDiv.innerText = `> ${statusText}`;
-                        logContainer.prepend(newDiv);
-                    }
-                }
-            } catch (e) {
-                // Mode silencieux si l'API est temporairement limitée
-            }
+        function launchSystem() {
+            // Masquer l'écran Start
+            document.getElementById('start-screen').style.display = 'none';
+            
+            // Afficher le contenu
+            document.getElementById('media-container').style.display = 'block';
+            
+            // Lancer la musique
+            var audio = document.getElementById('bg-audio');
+            audio.play().catch(error => console.log("Audio bloqué par le navigateur :", error));
+            
+            // Déclenchement automatique de l'action GitHub en arrière-plan via fetch (requête API GitHub)
+            // Remplace TON_PSEUDO par ton vrai pseudo GitHub
+            const token = ""; // Optionnel si public, mais l'idéal est de passer par le bouton direct si l'API demande une authentification stricte.
+            
+            // Redirection transparente ou ouverture de l'action GitHub si besoin, 
+            // ou appel de l'API de dispatch GitHub Actions :
+            fetch('https://api.github.com/repos/TON_PSEUDO/B2B-Automation-Manager/actions/workflows/run_bot.yml/dispatches', {
+                method: 'POST',
+                headers: {
+                    'Accept': 'application/vnd.github+json',
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ ref: 'main' })
+            }).then(response => {
+                console.log("Signal de lancement envoyé au cloud !");
+            }).catch(err => {
+                console.log("Erreur de dispatch, mais l'ambiance est là.");
+            });
         }
-
-        // Vérification du statut toutes les 15 secondes
-        setInterval(fetchGitHubStatus, 15000);
-        fetchGitHubStatus();
     </script>
 </body>
 </html>
